@@ -14,23 +14,19 @@
         <!-- 로고 자리 -->
         <div class="logo">
           <!-- 실제 로고 이미지 사용 시 <img> 태그로 교체 -->
-          <span class="logo-text">PancakeSwap</span>
+          <span class="logo-text">블록체인구조와원리</span>
         </div>
         <nav class="menu">
           <ul>
             <li><a href="#">Trade</a></li>
-            <li><a href="#">Earn</a></li>
-            <li><a href="#">Bridge</a></li>
-            <li><a href="#">Play</a></li>
+            <li><a href="#">관리자</a></li>
           </ul>
         </nav>
       </div>
       <div class="navbar-right">
-        <div class="balance">
-          <span>$2.51</span>
-        </div>
+        <div class="balance"></div>
         <div class="network-select">
-          <span>BNB Chain</span>
+          <span>Etherium</span>
           <!-- 네트워크 아이콘이 있다면 <img> 사용 -->
         </div>
         <button class="btn-connect">Connect Wallet</button>
@@ -42,15 +38,16 @@
       <div class="swap-container">
         <div class="swap-header">
           <button class="swap-tab active">Swap</button>
-          <button class="swap-tab">TWAP</button>
-          <button class="swap-tab">Limit</button>
+          <button class="swap-tab">유동성 관리</button>
         </div>
         <div class="swap-body">
           <div class="swap-row">
             <label>From</label>
             <div class="swap-input">
               <select>
-                <option>BNB</option>
+                <option>토큰1</option>
+                <option>토큰2</option>
+                <option>토큰3</option>
                 <!-- 필요하다면 다른 토큰 추가 -->
               </select>
               <input type="number" placeholder="0.00" />
@@ -60,15 +57,16 @@
             <label>To</label>
             <div class="swap-input">
               <select>
-                <option>CAKE</option>
-                <!-- 필요하다면 다른 토큰 추가 -->
+                <option>토큰1</option>
+                <option>토큰2</option>
+                <option>토큰3</option>
               </select>
               <input type="number" placeholder="0.00" />
             </div>
           </div>
         </div>
         <div class="swap-footer">
-          <button class="btn-swap">Connect Wallet</button>
+          <button class="btn-swap">Send</button>
         </div>
       </div>
     </main>
