@@ -3,16 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>블록체인구조와원리 실습</title>
-    <!-- CSS 연결 -->
-    <link rel="stylesheet" href="css/liquidity.css" />
+    <title>블록체인구조와원리 실습 - 유동성 관리</title>
+    <!-- 공통 CSS (index.css, navbar.css) -->
+    <link rel="stylesheet" href="css/index.css" />
     <link rel="stylesheet" href="css/navbar.css" />
+    <!-- 유동성 관리 전용 CSS -->
+    <link rel="stylesheet" href="css/liquidity.css" />
   </head>
   <body>
-    <!-- 상단 네비게이션 바 -->
+    <!-- 상단 네비게이션 바 (index.html과 동일 구조) -->
     <header class="navbar">
       <div class="navbar-left">
-        <!-- 로고 자리 -->
         <div class="logo">
           <img src="img/hyu_logo.png" id="logo" />
           <span class="logo-text">블록체인구조와원리</span>
@@ -36,56 +37,65 @@
 
     <!-- 메인 영역 -->
     <main class="main-container">
-      <section class="liquidity-section">
-        <h2>Liquidity Pool</h2>
-
-        <div class="liquidity-box">
-          <h3>Add Liquidity</h3>
-          <div class="form-group">
-            <label for="tokenA">Token A</label>
-            <select id="tokenA" class="token-select">
-              <!-- JS에서 tokens.json 읽어와 옵션 추가 -->
-            </select>
-            <input type="number" id="amountA" placeholder="0.0" />
-          </div>
-
-          <div class="form-group">
-            <label for="tokenB">Token B</label>
-            <select id="tokenB" class="token-select">
-              <!-- JS에서 tokens.json 읽어와 옵션 추가 -->
-            </select>
-            <input type="number" id="amountB" placeholder="0.0" />
-          </div>
-
-          <button id="btn-add-liquidity" class="btn-swap">Add Liquidity</button>
-        </div>
-
-        <div class="liquidity-box">
-          <h3>Remove Liquidity</h3>
-          <div class="form-group">
-            <label for="lpTokenSelect">Select LP Token</label>
-            <select id="lpTokenSelect" class="token-select">
-              <!-- 실제로는 사용자가 가진 LP 토큰 목록이 표시되어야 함 -->
-              <option>BNB-CAKE LP</option>
-              <option>BNB-TT LP</option>
-            </select>
-            <input type="number" id="lpAmount" placeholder="0.0" />
-          </div>
-
-          <button id="btn-remove-liquidity" class="btn-swap remove">
-            Remove Liquidity
+      <!-- swap-container 와 동일한 레이아웃을 유지 -->
+      <div class="swap-container">
+        <!-- 탭 헤더 -->
+        <div class="swap-header">
+          <!-- Swap 탭 (이 페이지에서는 기본적으로 비활성) -->
+          <button
+            class="swap-tab"
+            onclick="window.location.href='index.html'"
+            data-view="swapView"
+          >
+            Swap
+          </button>
+          <!-- 유동성 관리 탭 (기본 활성 상태) -->
+          <button class="swap-tab active" data-view="liquidityView">
+            유동성 관리
           </button>
         </div>
 
-        <div class="liquidity-box">
-          <h3>My Liquidity Tokens</h3>
-          <ul id="lp-token-list">
-            <!-- JS에서 사용자의 LP 토큰 목록을 예시로 표시 -->
-          </ul>
+        <!-- 유동성 관리 화면: 기본 표시 -->
+        <div id="liquidityView" class="swap-body">
+          <!-- 유동성 추가 -->
+          <div class="swap-row">
+            <label>유동성 추가</label>
+            <div class="swap-input">
+              <select>
+                <option>토큰1</option>
+                <option>토큰2</option>
+                <option>토큰3</option>
+              </select>
+              <input type="number" id="add-amount" placeholder="0.00" />
+            </div>
+          </div>
+
+          <button id="btnAddLiquidity" class="btn-swap">유동성 추가</button>
+
+          <!-- 유동성 제거 -->
+          <div class="swap-row">
+            <label>유동성 제거</label>
+            <div class="swap-input">
+              <select>
+                <option>토큰1</option>
+                <option>토큰2</option>
+                <option>토큰3</option>
+              </select>
+              <input type="number" id="remove-amount" placeholder="0.00" />
+            </div>
+          </div>
+
+          <!-- 버튼 영역 -->
+          <div class="swap-footer" style="gap: 0.5rem">
+            <button id="btnRemoveLiquidity" class="btn-swap">
+              유동성 제거
+            </button>
+          </div>
         </div>
-      </section>
+      </div>
     </main>
 
+    <!-- 유동성 전용 JS -->
     <script src="js/liquidity.js"></script>
   </body>
 </html>

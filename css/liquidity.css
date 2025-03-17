@@ -1,173 +1,57 @@
-/* 전역 스타일 초기화 */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+.liquidity-container {
+  width: 400px;
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  margin: 0 auto;
 }
 
-body {
-  font-family: "Arial", sans-serif;
-  background: linear-gradient(180deg, #f8f9fe 0%, #eaf3ff 100%);
-  min-height: 100vh;
+/* 페이지 제목 */
+.liquidity-container h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #674cff;
+}
+
+/* 유동성 추가/제거 섹션 */
+.liquidity-section {
+  background-color: #f8f9fe;
+  border-radius: 12px;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+/* 섹션 제목 */
+.liquidity-section h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
   color: #333;
 }
 
-/* 네비게이션 바 */
-.navbar {
-  width: 100%;
-  height: 70px;
-  background-color: #fff;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 2rem;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-}
-
-.navbar-left {
-  display: flex;
-  align-items: center;
-}
-
-.logo-text {
-  font-size: 1.4rem;
-  font-weight: bold;
-  color: #674cff;
-  margin-right: 2rem;
-}
-
-.menu ul {
-  display: flex;
-  list-style: none;
-}
-
-.menu ul li {
-  margin-right: 1.5rem;
-}
-
-.menu ul li a {
-  text-decoration: none;
-  color: #555;
-  font-weight: 500;
-  transition: color 0.2s;
-}
-
-.menu ul li a:hover {
-  color: #000;
-}
-
-.menu ul li a.active {
-  color: #674cff;
-  border-bottom: 2px solid #674cff;
-}
-
-.navbar-right {
-  display: flex;
-  align-items: center;
-}
-
-.network-select {
-  margin-right: 1rem;
-  font-weight: 600;
-  color: #444;
-}
-
-.btn-connect {
-  background: #674cff;
-  color: #fff;
-  border: none;
-  border-radius: 8px;
-  font-size: 0.9rem;
-  padding: 0.6rem 1rem;
-  cursor: pointer;
-}
-.btn-connect:hover {
-  background: #553bd6;
-}
-
-/* 메인 컨테이너 */
-.main-container {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  padding: 2rem;
-}
-
-.liquidity-section {
-  width: 600px;
-  background: #fff;
-  border-radius: 16px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  padding: 2rem;
-}
-
-.liquidity-section h2 {
-  margin-bottom: 1rem;
-}
-
-.liquidity-box {
-  background: #f8f9fe;
-  border-radius: 12px;
-  padding: 1.5rem;
-  margin-bottom: 2rem;
-}
-
-.liquidity-box h3 {
-  margin-bottom: 1rem;
-}
-
+/* 폼 그룹 */
 .form-group {
   margin-bottom: 1rem;
 }
 
 .form-group label {
-  display: inline-block;
+  display: block;
   margin-bottom: 0.5rem;
+  font-size: 0.9rem;
   font-weight: 600;
+  color: #555;
 }
 
-.token-select {
-  margin-right: 1rem;
-  border: none;
-  background: #fff;
-  padding: 0.5rem;
-  border-radius: 8px;
-  outline: none;
-}
-
-.form-group input[type="number"] {
-  width: 150px;
-  padding: 0.5rem;
-  border-radius: 8px;
+.form-group input {
+  width: 100%;
+  padding: 0.6rem;
   border: 1px solid #ddd;
-  outline: none;
-}
-
-.btn-swap {
-  background: #674cff;
-  color: #fff;
-  font-weight: 600;
-  padding: 0.8rem 1.2rem;
-  border: none;
   border-radius: 8px;
-  cursor: pointer;
+  font-size: 1rem;
+  color: #333;
 }
 
-.btn-swap:hover {
-  background: #553bd6;
-}
-
-.btn-swap.remove {
-  background: #ff4d4f;
-}
-.btn-swap.remove:hover {
-  background: #cc393b;
-}
-
-#lp-token-list {
-  list-style: none;
-  margin-left: 1rem;
-}
-#lp-token-list li {
-  margin-bottom: 0.5rem;
+#btnAddLiquidity {
+  margin-bottom: 30px;
 }
