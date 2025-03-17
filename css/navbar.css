@@ -74,3 +74,17 @@
 #logo {
   width: 65px;
 }
+
+.btn-connect {
+  background: #674cff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  padding: 0.6rem 1rem;
+  cursor: pointer;
+}
+
+.btn-connect:hover {
+  background: #553bd6;
+}
