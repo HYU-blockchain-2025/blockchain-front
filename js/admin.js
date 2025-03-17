@@ -39,17 +39,13 @@ function renderTokenTable() {
     const tdDecimals = document.createElement("td");
     tdDecimals.textContent = token.amounts;
 
-    const tdAction = document.createElement("td");
-    const btnDelete = document.createElement("button");
-    btnDelete.classList.add("btn-delete");
-    btnDelete.textContent = "Delete";
-    btnDelete.addEventListener("click", () => {
-      deleteToken(index);
-    });
+    const tdAddress = document.createElement("td");
+    tdAddress.textContent = token.address;
 
     tr.appendChild(tdSymbol);
     tr.appendChild(tdName);
     tr.appendChild(tdDecimals);
+    tr.appendChild(tdAddress);
 
     tbody.appendChild(tr);
   });
