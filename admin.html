@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>블록체인구조와원리 실습</title>
+    <!-- CSS 연결 -->
+    <link rel="stylesheet" href="css/admin.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+  </head>
+  <body>
+    <!-- 상단 네비게이션 바 -->
+    <header class="navbar">
+      <div class="navbar-left">
+        <!-- 로고 자리 -->
+        <div class="logo">
+          <img src="img/hyu_logo.png" id="logo" />
+          <span class="logo-text">블록체인구조와원리</span>
+        </div>
+        <nav class="menu">
+          <ul>
+            <li><a href="index.html">Trade</a></li>
+            <li><a href="admin.html">관리자</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="navbar-right">
+        <div class="balance"></div>
+        <div class="network-select">
+          <img src="img/ethereum-eth-logo.png" id="etherium" />
+          <span>Etherium</span>
+        </div>
+        <button class="btn-connect">Connect Wallet</button>
+      </div>
+    </header>
+
+    <!-- 메인 영역 -->
+    <main class="main-container">
+      <section class="admin-section">
+        <h2>토큰 등록 / 관리</h2>
+
+        <div class="token-list-box">
+          <h3>현재 등록된 토큰</h3>
+          <table id="token-table">
+            <thead>
+              <tr>
+                <th>Symbol</th>
+                <th>Name</th>
+                <th>Amounts</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- JS에서 JSON 데이터 불러와서 표시 -->
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <script src="js/admin.js"></script>
+  </body>
+</html>

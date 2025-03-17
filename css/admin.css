@@ -1,0 +1,191 @@
+/* 전역 스타일 초기화 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background: linear-gradient(180deg, #f8f9fe 0%, #eaf3ff 100%);
+  min-height: 100vh;
+  color: #333;
+}
+
+/* 네비게이션 바 */
+.navbar {
+  width: 100%;
+  height: 70px;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.logo-text {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #674cff;
+  margin-right: 2rem;
+}
+
+.menu ul {
+  display: flex;
+  list-style: none;
+}
+
+.menu ul li {
+  margin-right: 1.5rem;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: #555;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.menu ul li a:hover {
+  color: #000;
+}
+
+.menu ul li a.active {
+  color: #674cff;
+  border-bottom: 2px solid #674cff;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.network-select {
+  margin-right: 1rem;
+  font-weight: 600;
+  color: #444;
+}
+
+.btn-connect {
+  background: #674cff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  padding: 0.6rem 1rem;
+  cursor: pointer;
+}
+.btn-connect:hover {
+  background: #553bd6;
+}
+
+/* 메인 컨테이너 */
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 2rem;
+}
+
+.admin-section {
+  width: 800px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+}
+
+.admin-section h2 {
+  margin-bottom: 1.5rem;
+}
+
+/* 토큰 목록 */
+.token-list-box {
+  margin-bottom: 2rem;
+}
+
+#token-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #f8f9fe;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+#token-table thead {
+  background: #e2e2f3;
+}
+
+#token-table th,
+#token-table td {
+  padding: 0.75rem 1rem;
+  text-align: left;
+}
+
+#token-table th {
+  font-weight: 600;
+}
+
+#token-table tbody tr:nth-child(even) {
+  background: #fafafa;
+}
+
+.btn-delete {
+  background: #ff4d4f;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.4rem 0.8rem;
+  cursor: pointer;
+}
+.btn-delete:hover {
+  background: #cc393b;
+}
+
+/* 토큰 추가 */
+.token-add-box {
+  background: #f8f9fe;
+  border-radius: 12px;
+  padding: 1.5rem;
+}
+
+.token-add-box h3 {
+  margin-bottom: 1rem;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.3rem;
+  font-weight: 600;
+}
+
+.form-group input {
+  width: 300px;
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  outline: none;
+}
+
+.btn-add {
+  background: #674cff;
+  color: #fff;
+  font-weight: 600;
+  padding: 0.8rem 1.2rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.btn-add:hover {
+  background: #553bd6;
+}

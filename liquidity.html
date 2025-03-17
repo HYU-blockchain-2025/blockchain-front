@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>블록체인구조와원리 실습</title>
+    <!-- CSS 연결 -->
+    <link rel="stylesheet" href="css/liquidity.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+  </head>
+  <body>
+    <!-- 상단 네비게이션 바 -->
+    <header class="navbar">
+      <div class="navbar-left">
+        <!-- 로고 자리 -->
+        <div class="logo">
+          <img src="img/hyu_logo.png" id="logo" />
+          <span class="logo-text">블록체인구조와원리</span>
+        </div>
+        <nav class="menu">
+          <ul>
+            <li><a href="index.html">Trade</a></li>
+            <li><a href="admin.html">관리자</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="navbar-right">
+        <div class="balance"></div>
+        <div class="network-select">
+          <img src="img/ethereum-eth-logo.png" id="etherium" />
+          <span>Etherium</span>
+        </div>
+        <button class="btn-connect">Connect Wallet</button>
+      </div>
+    </header>
+
+    <!-- 메인 영역 -->
+    <main class="main-container">
+      <section class="liquidity-section">
+        <h2>Liquidity Pool</h2>
+
+        <div class="liquidity-box">
+          <h3>Add Liquidity</h3>
+          <div class="form-group">
+            <label for="tokenA">Token A</label>
+            <select id="tokenA" class="token-select">
+              <!-- JS에서 tokens.json 읽어와 옵션 추가 -->
+            </select>
+            <input type="number" id="amountA" placeholder="0.0" />
+          </div>
+
+          <div class="form-group">
+            <label for="tokenB">Token B</label>
+            <select id="tokenB" class="token-select">
+              <!-- JS에서 tokens.json 읽어와 옵션 추가 -->
+            </select>
+            <input type="number" id="amountB" placeholder="0.0" />
+          </div>
+
+          <button id="btn-add-liquidity" class="btn-swap">Add Liquidity</button>
+        </div>
+
+        <div class="liquidity-box">
+          <h3>Remove Liquidity</h3>
+          <div class="form-group">
+            <label for="lpTokenSelect">Select LP Token</label>
+            <select id="lpTokenSelect" class="token-select">
+              <!-- 실제로는 사용자가 가진 LP 토큰 목록이 표시되어야 함 -->
+              <option>BNB-CAKE LP</option>
+              <option>BNB-TT LP</option>
+            </select>
+            <input type="number" id="lpAmount" placeholder="0.0" />
+          </div>
+
+          <button id="btn-remove-liquidity" class="btn-swap remove">
+            Remove Liquidity
+          </button>
+        </div>
+
+        <div class="liquidity-box">
+          <h3>My Liquidity Tokens</h3>
+          <ul id="lp-token-list">
+            <!-- JS에서 사용자의 LP 토큰 목록을 예시로 표시 -->
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <script src="js/liquidity.js"></script>
+  </body>
+</html>
