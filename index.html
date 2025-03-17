@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PancakeSwap Clone</title>
+    <title>블록체인구조와원리 실습</title>
     <!-- CSS 연결 -->
     <link rel="stylesheet" href="css/index.css" />
   </head>
@@ -13,7 +13,7 @@
       <div class="navbar-left">
         <!-- 로고 자리 -->
         <div class="logo">
-          <!-- 실제 로고 이미지 사용 시 <img> 태그로 교체 -->
+          <img src="img/hyu_logo.png" id="logo" />
           <span class="logo-text">블록체인구조와원리</span>
         </div>
         <nav class="menu">
@@ -26,8 +26,8 @@
       <div class="navbar-right">
         <div class="balance"></div>
         <div class="network-select">
+          <img src="img/ethereum-eth-logo.png" id="etherium" />
           <span>Etherium</span>
-          <!-- 네트워크 아이콘이 있다면 <img> 사용 -->
         </div>
         <button class="btn-connect">Connect Wallet</button>
       </div>
@@ -51,6 +51,11 @@
                 <!-- 필요하다면 다른 토큰 추가 -->
               </select>
               <input type="number" placeholder="0.00" />
+            </div>
+          </div>
+          <div class="swap-row-arrow">
+            <div>
+              <img src="img/arrow_down.png" id="arrow_down" />
             </div>
           </div>
           <div class="swap-row">

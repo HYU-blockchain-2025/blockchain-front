@@ -81,6 +81,15 @@ body {
   color: #444;
 }
 
+#etherium {
+  width: 25px;
+  margin-right: 5px;
+}
+
+#logo {
+  width: 65px;
+}
+
 /* 버튼 공통 스타일 */
 button {
   outline: none;
@@ -154,6 +163,12 @@ button {
   margin-bottom: 1rem;
 }
 
+.swap-row-arrow {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
 .swap-row label {
   display: block;
   font-size: 0.9rem;
@@ -206,4 +221,8 @@ button {
 
 .btn-swap:hover {
   background: #553bd6;
+}
+
+#arrow_down {
+  height: 30px;
 }
