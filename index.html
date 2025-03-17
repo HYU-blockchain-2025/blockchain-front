@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PancakeSwap Clone</title>
+    <!-- CSS 연결 -->
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+  <body>
+    <!-- 상단 네비게이션 바 -->
+    <header class="navbar">
+      <div class="navbar-left">
+        <!-- 로고 자리 -->
+        <div class="logo">
+          <!-- 실제 로고 이미지 사용 시 <img> 태그로 교체 -->
+          <span class="logo-text">PancakeSwap</span>
+        </div>
+        <nav class="menu">
+          <ul>
+            <li><a href="#">Trade</a></li>
+            <li><a href="#">Earn</a></li>
+            <li><a href="#">Bridge</a></li>
+            <li><a href="#">Play</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="navbar-right">
+        <div class="balance">
+          <span>$2.51</span>
+        </div>
+        <div class="network-select">
+          <span>BNB Chain</span>
+          <!-- 네트워크 아이콘이 있다면 <img> 사용 -->
+        </div>
+        <button class="btn-connect">Connect Wallet</button>
+      </div>
+    </header>
+
+    <!-- 메인 영역 -->
+    <main class="main-container">
+      <div class="swap-container">
+        <div class="swap-header">
+          <button class="swap-tab active">Swap</button>
+          <button class="swap-tab">TWAP</button>
+          <button class="swap-tab">Limit</button>
+        </div>
+        <div class="swap-body">
+          <div class="swap-row">
+            <label>From</label>
+            <div class="swap-input">
+              <select>
+                <option>BNB</option>
+                <!-- 필요하다면 다른 토큰 추가 -->
+              </select>
+              <input type="number" placeholder="0.00" />
+            </div>
+          </div>
+          <div class="swap-row">
+            <label>To</label>
+            <div class="swap-input">
+              <select>
+                <option>CAKE</option>
+                <!-- 필요하다면 다른 토큰 추가 -->
+              </select>
+              <input type="number" placeholder="0.00" />
+            </div>
+          </div>
+        </div>
+        <div class="swap-footer">
+          <button class="btn-swap">Connect Wallet</button>
+        </div>
+      </div>
+    </main>
+
+    <!-- JS 연결 -->
+    <script src="index.js"></script>
+  </body>
+</html>
