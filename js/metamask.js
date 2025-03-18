@@ -1,5 +1,3 @@
-// nav.js
-
 let currentAccount = null;
 let currentBalance = null;
 
