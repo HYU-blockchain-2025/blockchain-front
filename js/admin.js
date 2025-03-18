@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // tokens.json 불러오기
 function loadTokens() {
-  fetch("./data/tokens.json")
+  fetch("./data/amm.json")
     .then((res) => res.json())
     .then((data) => {
       tokenData = data;
@@ -30,21 +30,11 @@ function renderTokenTable() {
   tokenData.forEach((token, index) => {
     const tr = document.createElement("tr");
 
-    const tdSymbol = document.createElement("td");
-    tdSymbol.textContent = token.symbol;
-
-    const tdName = document.createElement("td");
-    tdName.textContent = token.name;
-
-    const tdDecimals = document.createElement("td");
-    tdDecimals.textContent = token.amounts;
 
     const tdAddress = document.createElement("td");
     tdAddress.textContent = token.address;
 
-    tr.appendChild(tdSymbol);
-    tr.appendChild(tdName);
-    tr.appendChild(tdDecimals);
+
     tr.appendChild(tdAddress);
 
     tbody.appendChild(tr);
