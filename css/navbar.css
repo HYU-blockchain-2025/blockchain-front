@@ -87,3 +87,14 @@
 .btn-connect:hover {
   background: #553bd6;
 }
+
+#btn-refresh {
+  background: #674cff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  padding: 0.6rem 1rem;
+  cursor: pointer;
+  margin-left: 10px;
+}
