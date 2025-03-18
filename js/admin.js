@@ -5,10 +5,10 @@ let tokenData = [];
 document.addEventListener("DOMContentLoaded", () => {
   loadTokens();
 
-  // Add Token 버튼 이벤트
-  document.getElementById("btn-add-token").addEventListener("click", () => {
-    addToken();
-  });
+  // // Add Token 버튼 이벤트
+  // document.getElementById("btn-add-token").addEventListener("click", () => {
+  //   addToken();
+  // });
 });
 
 // tokens.json 불러오기
