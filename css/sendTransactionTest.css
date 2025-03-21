@@ -1,0 +1,66 @@
+/* sendTransactionTest.css */
+
+/* 전체 스왑 영역 */
+.swap-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  margin: 20px auto;
+  max-width: 500px;
+
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+/* 내부 컨텐츠 영역 */
+.swap-body {
+  width: 100%;
+}
+
+/* 입력 필드 컨테이너 */
+.input-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+/* 입력 필드의 라벨 */
+.input-container label {
+  margin-bottom: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* 입력 필드 스타일 */
+.input-container input {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.3s ease;
+}
+
+.input-container input:focus {
+  border-color: #66afe9;
+  outline: none;
+}
+
+/* 전송 버튼 스타일 */
+#btn-transfer {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#btn-transfer:hover {
+  background-color: #0056b3;
+}
